@@ -134,7 +134,7 @@ const guilds: {
             title: "Kinstrife",
             subject: "2000+ Members",
             description: "https://discord.gg/nxtWpbvfFJ",
-            image: "https://cdn.discordapp.com/icons/728704992449527879/887e3242b1a04dfcac19b1c5fd93411d.webp?size=1024&format=webp&width=0&height=256"
+            image: "https://cdn.discordapp.com/attachments/1196003341575135242/1198333066733690880/image.png?ex=65be85a3&is=65ac10a3&hm=0b70df6b909dcfed025c25f02475587e4196da09bf8617250797a1409fef68ba&"
         },
         {
             title: "Trans Gamers",
