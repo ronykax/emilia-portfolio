@@ -1,0 +1,365 @@
+<script lang="ts">
+    // Icons
+    import Brush from "$lib/icons/Brush.svelte";
+    import Chat from "$lib/icons/Chat.svelte";
+    import Mail from "$lib/icons/Mail.svelte";
+    import Folder from "$lib/icons/Folder.svelte";
+    import Bag from "$lib/icons/Bag.svelte";
+    import Shield from "$lib/icons/Shield.svelte";
+    import Paint from "$lib/icons/Paint.svelte";
+    import Bluesky from "$lib/icons/Bluesky.svelte";
+    import Discord from "$lib/icons/Discord.svelte";
+    import Fiverr from "$lib/icons/Fiverr.svelte";
+    import Twitter from "$lib/icons/Twitter.svelte";
+
+    interface Item {
+        icon?: ConstructorOfATypedSvelteComponent;
+        title?: string;
+        link?: string;
+        description?: string;
+        image?: string;
+    }
+
+    const choices: Item[] = [
+        {
+            icon: Brush,
+            title: "Seeing what I offer"
+        },
+        {
+            icon: Chat,
+            title: "Viewing user reviews"
+        },
+        {
+            icon: Mail,
+            title: "Getting in touch with me"
+        },
+        {
+            icon: Folder,
+            title: "Viewing my resume"
+        },
+    ];
+
+    const services: Item[] =  [
+        {
+            icon: Bag,
+            title: "Management",
+            description: "I will do Discord community management for you!"
+        },
+        {
+            icon: Shield,
+            title: "Moderation",
+            description: "I will do Discord community moderation for you!"
+        },
+        {
+            icon: Paint,
+            title: "Design",
+            description: "I will setup a professional Discord server for you!"
+        }
+    ];
+
+    const socials: Item[] = [
+        {
+            icon: Fiverr,
+            title: "Fiverr"
+        },
+        {
+            icon: Discord,
+            title: "Discord"
+        },
+        {
+            icon: Twitter,
+            title: "Twitter"
+        },
+        {
+            icon: Bluesky,
+            title: "Bluesky"
+        }
+    ];
+
+    // const clients: Item[] = [
+    //     {
+    //         title: "ChibeeU",
+    //         description: "40+ Members"
+    //     },
+    //     {
+    //         title: "ChibeeU",
+    //         description: "40+ Members"
+    //     },
+    //     {
+    //         title: "ChibeeU",
+    //         description: "40+ Members"
+    //     },
+    //     {
+    //         title: "ChibeeU",
+    //         description: "40+ Members"
+    //     }
+    // ];
+
+    const clients: {
+        row01: Item[];
+        row02: Item[];
+    } = {
+        row01: [
+            {
+                title: "Blight Survival",
+                description: "40+ Members",
+                image: "pfp.png"
+            },
+            {
+                title: "Unrecord",
+                description: "40+ Members",
+                image: "pfp.png"
+            },
+            {
+                title: "Kinstrife",
+                description: "40+ Members",
+                image: "pfp.png"
+            },
+            {
+                title: "Rise & Reign",
+                description: "40+ Members",
+                image: "pfp.png"
+            }
+        ],
+        row02: [
+            {
+                title: "ChibeeU",
+                description: "40+ Members",
+                image: "pfp.png"
+            },
+            {
+                title: "Would You",
+                description: "40+ Members",
+                image: "pfp.png"
+            },
+            {
+                title: "Trans Gamers",
+                description: "40+ Members",
+                image: "pfp.png"
+            },
+            {
+                title: "Emilia's Eden",
+                description: "40+ Members",
+                image: "pfp.png"
+            }
+        ]
+    }
+</script>
+
+<!-- HEADER -->
+<div class="h-screen">
+    <div class="h-[95%] bg-blue flex flex-col justify-between rounded-br-8xl">
+        
+        <!-- Navbar -->
+        <div class="flex justify-between px-8 py-6 bg-white rounded-bl-4xl">
+            <div class="flex items-center gap-4">
+                <img
+                    class="w-12 rounded-full"
+                    src="pfp.png"
+                    alt=""
+                >
+                <h1 class="text-2xl font-semibold font-bricolage">Emilia Petersen</h1>
+            </div>
+            <div>
+                <!-- Hamburger menu icon -->
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-8 px-4 mb-10 lg:px-44">
+            <h1 class="text-6xl font-light text-white font-bricolage">
+                Hi! I'm <span class="font-semibold">Emilia Petersen</span>, a <span class="font-semibold">Community Manager</span>
+            </h1>
+            <span class="text-3xl text-white">I help foster communities.</span>
+        </div>
+
+    </div>
+</div>
+
+<!-- CHOICES -->
+<div class="px-4 mt-4">
+
+    <h1 class="text-4xl leading-snug text-center font-bricolage">
+        What are you <span class="font-semibold">looking for</span> today?
+    </h1>
+
+    <div class="mt-8 md:px-32 lg:px-48 xl:px-64 2xl:px-80">
+        <ul class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            {#each choices as item, index}
+                <li>
+                    <div class="p-2.5 rounded-2xl bg-blue">
+                        <div class="flex flex-col items-center justify-center gap-4 bg-white rounded-lg h-48 {index % 2 === 0 ? "rounded-tl-8xl" : "rounded-br-8xl"}">
+                            <svelte:component this={item.icon} />
+                            <h1 class="px-2 text-xl text-center">{item.title}</h1>
+                        </div>
+                    </div>
+                </li>
+            {/each}
+        </ul>
+    </div>
+    
+</div>
+
+<!-- CLIENTS -->
+<div class="mt-20">
+    <div class="py-20 bg-blue rounded-br-8xl rounded-tl-8xl">
+        
+        <h1 class="text-4xl leading-snug text-center text-white font-bricolage">
+            I’ve <span class="font-semibold">worked with</span> hundreds of clients
+        </h1>
+
+        <div class="space-y-6 my-14">        
+            <div class="overflow-hidden whitespace-nowrap">
+                <div class="inline-block animate-slide-left">
+                    {#each clients.row01 as item}
+                        <div class="inline-flex items-center gap-3 p-2 mx-3 bg-white w-72 rounded-2xl rounded-br-4xl">
+                            <img class="w-20 h-20 rounded-xl rounded-br-4xl" src="{item.image}" alt="">
+                            <div>
+                                <h1 class="text-3xl font-semibold font-bricolage-condensed">{item.title}</h1>
+                                <span class="text-xl text-black text-opacity-80">{item.description}</span>
+                            </div>
+                        </div>
+                    {/each}
+                </div>
+                <div class="inline-block animate-slide-left">
+                    {#each clients.row01 as item}
+                        <div class="inline-flex items-center gap-3 p-2 mx-3 bg-white w-72 rounded-2xl rounded-br-4xl">
+                            <img class="w-20 h-20 rounded-xl rounded-br-4xl" src="{item.image}" alt="">
+                            <div>
+                                <h1 class="text-3xl font-semibold font-bricolage-condensed">{item.title}</h1>
+                                <span class="text-xl text-black text-opacity-80">{item.description}</span>
+                            </div>
+                        </div>
+                    {/each}
+                </div>
+                <div class="inline-block animate-slide-left">
+                    {#each clients.row01 as item}
+                        <div class="inline-flex items-center gap-3 p-2 mx-3 bg-white w-72 rounded-2xl rounded-br-4xl">
+                            <img class="w-20 h-20 rounded-xl rounded-br-4xl" src="{item.image}" alt="">
+                            <div>
+                                <h1 class="text-3xl font-semibold font-bricolage-condensed">{item.title}</h1>
+                                <span class="text-xl text-black text-opacity-80">{item.description}</span>
+                            </div>
+                        </div>
+                    {/each}
+                </div>
+            </div>
+            <div class="overflow-hidden whitespace-nowrap">
+                <div class="inline-block animate-slide-right">
+                    {#each clients.row02 as item}
+                        <div class="inline-flex items-center gap-3 p-2 mx-3 bg-white w-72 rounded-2xl rounded-br-4xl">
+                            <img class="w-20 h-20 rounded-xl rounded-br-4xl" src="{item.image}" alt="">
+                            <div>
+                                <h1 class="text-3xl font-semibold font-bricolage-condensed">{item.title}</h1>
+                                <span class="text-xl text-black text-opacity-80">{item.description}</span>
+                            </div>
+                        </div>
+                    {/each}
+                </div>
+                <div class="inline-block animate-slide-right">
+                    {#each clients.row02 as item}
+                        <div class="inline-flex items-center gap-3 p-2 mx-3 bg-white w-72 rounded-2xl rounded-br-4xl">
+                            <img class="w-20 h-20 rounded-xl rounded-br-4xl" src="{item.image}" alt="">
+                            <div>
+                                <h1 class="text-3xl font-semibold font-bricolage-condensed">{item.title}</h1>
+                                <span class="text-xl text-black text-opacity-80">{item.description}</span>
+                            </div>
+                        </div>
+                    {/each}
+                </div>
+                <div class="inline-block animate-slide-right">
+                    {#each clients.row02 as item}
+                        <div class="inline-flex items-center gap-3 p-2 mx-3 bg-white w-72 rounded-2xl rounded-br-4xl">
+                            <img class="w-20 h-20 rounded-xl rounded-br-4xl" src="{item.image}" alt="">
+                            <div>
+                                <h1 class="text-3xl font-semibold font-bricolage-condensed">{item.title}</h1>
+                                <span class="text-xl text-black text-opacity-80">{item.description}</span>
+                            </div>
+                        </div>
+                    {/each}
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-4xl leading-snug text-center text-white font-bricolage">
+            With <span class="font-semibold">moderation</span> and <span class="font-semibold">management</span>
+        </h1>
+
+    </div>
+</div>
+
+<!-- SERVICES -->
+<div class="px-4 mt-16">
+
+    <h1 class="text-4xl leading-snug text-center font-bricolage">
+        Explore what I <span class="font-semibold">offer</span>
+    </h1>
+
+    <div class="mt-8 md:px-32 lg:px-48 xl:px-64 2xl:px-80">
+        <ul class="flex flex-col gap-4">
+            {#each services as item, index}
+                <li>
+                    <div class="p-2.5 rounded-2xl bg-blue flex gap-3 {index === 0 ? "rounded-tr-8xl" : index === services.length - 1 ? "rounded-br-8xl" : ""}">
+                        <div class="min-w-36 w-36 h-36 bg-white rounded-lg flex justify-center items-center {index === 0 ? "rounded-tr-8xl" : index === services.length - 1 ? "rounded-br-8xl" : ""}">
+                            <svelte:component this={item.icon} />
+                        </div>
+                        <div class="flex flex-col items-start gap-2 py-2">
+                            <h1 class="text-3xl font-semibold text-center text-white underline underline-offset-[3px] font-bricolage-condensed">{item.title}</h1>
+                            <span class="text-xl text-white">{item.description}</span>
+                        </div>
+                    </div>
+                </li>
+            {/each}
+        </ul>
+    </div>
+    
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="mt-20">
+    <div class="py-20 bg-blue rounded-br-8xl rounded-tl-8xl">
+        
+        <h1 class="text-4xl leading-snug text-center text-white font-bricolage">
+            What people<br><span class="font-semibold">are saying</span>
+        </h1>
+
+        <!-- Scroll thing -->
+        <div class="my-14">
+            <h1>.</h1>
+        </div>
+
+    </div>
+</div>
+
+<!-- SOCIALS -->
+<div class="px-4 mt-16">
+
+    <h1 class="text-4xl leading-snug text-center font-bricolage">
+        Let's get <span class="font-semibold">in touch</span>
+    </h1>
+
+    <div class="mt-8 md:px-32 lg:px-48 xl:px-64 2xl:px-80">
+        <ul class="flex flex-col gap-4">
+            {#each socials as item, index}
+                <li>
+                    <div class="p-2.5 rounded-2xl bg-blue flex gap-3 items-center {index === 0 ? "rounded-tl-8xl" : index === socials.length - 1 ? "rounded-bl-8xl" : ""}">
+                        <div class="min-w-24 w-24 h-24 bg-white rounded-lg flex justify-center items-center {index === 0 ? "rounded-tl-7.5xl" : index === socials.length - 1 ? "rounded-bl-7.5xl" : ""}">
+                            <svelte:component this={item.icon} />
+                        </div>
+                        <h1 class="text-3xl font-semibold text-center text-white underline underline-offset-[3px] font-bricolage-condensed">{item.title}</h1>
+                    </div>
+                </li>
+            {/each}
+        </ul>
+    </div>
+    
+</div>
+
+<!-- FOOTER -->
+<div class="mt-20">
+    <div class="px-4 pt-20 pb-12 space-y-2 bg-blue rounded-tl-8xl lg:px-44">
+
+        <h1 class="text-4xl font-semibold text-white font-bricolage-condensed">Emilia Petersen</h1>
+        <h1 class="text-2xl font-semibold text-white">©️ 2024</h1>
+
+    </div>
+</div>

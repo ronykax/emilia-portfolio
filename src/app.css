@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: bricolage-condensed;
+    src: url("./lib/fonts/BricolageGrotesque_Condensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: bricolage-condensed;
+    src: url("./lib/fonts/BricolageGrotesque_Condensed-SemiBold.ttf");
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    transition: all 0.15s ease-in-out ;
+}
+
+.font-bricolage {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.font-bricolage-condensed {
+    font-family: bricolage-condensed;
+}
+
+.font-bricolage-condensed-semibold {
+    font-family: bricolage-condensed;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-slide-left {
+    animation: 10s slide-left infinite linear;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.animate-slide-right {
+    animation: 10s slide-right infinite linear;
+}
+
+.custom-scrollbar ::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar ::-webkit-scrollbar-thumb {
+    @apply bg-black bg-opacity-50 rounded-lg;
+}
+
+::-webkit-scrollbar {
+    @apply w-2;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-blue;
+}
