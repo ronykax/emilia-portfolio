@@ -17,6 +17,10 @@
     transition: all 0.15s ease-in-out ;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .font-bricolage {
     font-family: 'Bricolage Grotesque', sans-serif;
 }
@@ -39,7 +43,7 @@
 }
 
 .animate-slide-left {
-    animation: 10s slide-left infinite linear;
+    animation: 20s slide-left infinite linear;
 }
 
 @keyframes slide-right {
@@ -52,7 +56,7 @@
 }
 
 .animate-slide-right {
-    animation: 10s slide-right infinite linear;
+    animation: 20s slide-right infinite linear;
 }
 
 .custom-scrollbar ::-webkit-scrollbar {
