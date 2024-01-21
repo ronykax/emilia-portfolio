@@ -84,7 +84,7 @@
             <div class="flex flex-col gap-5 px-6 pt-64 md:px-32">
                 <h1 class="text-5xl font-light text-white font-bricolage">
                     Hi! I’m
-                    <span class="font-semibold">Emilia Petersen</span>, a <span class="font-semibold">Community Manager</span>
+                    <span class="font-semibold font-bricolage">Emilia Petersen</span>, a <span class="font-semibold font-bricolage">Community Manager</span>
                 </h1>
                 <span class="text-2xl font-medium text-white">I help foster communities.</span>
             </div>
@@ -94,7 +94,7 @@
     <div class="mb-24">
         <div class="flex flex-col items-center gap-9">
             <h1 class="text-3xl text-center font-bricolage">
-                What are you<br><span class="font-semibold">looking for</span> today?
+                What are you<br><span class="font-semibold font-bricolage">looking for</span> today?
             </h1>
             <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
                 {#each choices as item, index}
@@ -113,19 +113,19 @@
 
     <div class="py-32 my-24 bg-blue rounded-tl-8xl rounded-br-8xl" id="portfolio">
         <h1 class="text-3xl text-center text-white font-bricolage">
-            I've <span class="font-semibold">worked with</span><br>hundreds of clients
+            I've <span class="font-semibold font-bricolage">worked with</span><br>hundreds of clients
         </h1>
 
         <Scroller />
         
         <h1 class="text-3xl text-center text-white font-bricolage">
-            With moderation and<br><span class="font-semibold">management</span>
+            With moderation and<br><span class="font-semibold font-bricolage">management</span>
         </h1>
     </div>
 
     <div class="flex flex-col px-6 my-24 gap-9" id="services">
         <h1 class="text-3xl text-center font-bricolage">
-            Explore what I <span class="font-semibold">offer</span>
+            Explore what I <span class="font-semibold font-bricolage">offer</span>
         </h1>
 
         <div class="flex justify-center">
@@ -154,7 +154,7 @@
 
     <div class="flex flex-col items-center py-32 my-24 bg-blue rounded-tl-8xl rounded-br-8xl" id="reviews">
         <h1 class="text-3xl text-center text-white font-bricolage">
-            What people<br><span class="font-semibold">are saying</span>
+            What people<br><span class="font-semibold font-bricolage">are saying</span>
         </h1>
 
         <div class="flex flex-col w-full gap-4 px-6 my-20 md:flex-row md:w-3/4">
@@ -175,7 +175,7 @@
 
     <div class="flex flex-col px-6 my-24 gap-9" id="contact">
         <h1 class="text-3xl text-center font-bricolage">
-            Let’s get <span class="font-semibold">in touch</span>
+            Let’s get <span class="font-semibold font-bricolage">in touch</span>
         </h1>
 
         <div class="flex justify-center">
