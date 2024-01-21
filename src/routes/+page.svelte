@@ -41,7 +41,7 @@
             <div class="flex items-center justify-between h-20 px-6 bg-white rounded-bl-3xl md:px-32">
                 <div class="flex items-center gap-3">
                     <img class="w-10 rounded-full" src="favicon.png" alt="">
-                    <h1 class="text-2xl font-semibold font-bricolage">Emilia Peterson</h1>
+                    <h1 class="text-2xl font-semibold font-bricolage">Emilia Petersen</h1>
                 </div>
 
                 <div class="lg:hidden">
