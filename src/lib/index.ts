@@ -165,7 +165,7 @@ const guilds: {
         {
             title: "Emilia's Den",
             subject: "20+ Members",
-            description: "https://discord.gg/VQCQwN6p",
+            description: "https://discord.gg/pJc2djYZHX",
             image: "https://cdn.discordapp.com/icons/1197169837617709207/cf4a67ceb77ddaa0ba09d213dd0f3088.webp?size=1024&format=webp&width=0&height=256"
         }
     ]
