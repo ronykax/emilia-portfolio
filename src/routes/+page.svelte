@@ -204,7 +204,7 @@
             <h1 class="text-5xl font-light text-white font-bricolage-condensed">
                 Emilia Peterson
             </h1>
-            <span class="text-2xl font-medium text-white">©️ {new Date().getFullYear()}</span>
+            <span class="text-2xl font-medium text-white">© {new Date().getFullYear()}</span>
         </div>
     </div>
 </div>
