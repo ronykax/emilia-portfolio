@@ -202,7 +202,7 @@
     <div class="flex items-end pt-24 pb-20 bg-blue rounded-tl-8xl">
         <div class="flex flex-col gap-4 px-6 md:px-32">
             <h1 class="text-5xl font-light text-white font-bricolage-condensed">
-                Emilia Peterson
+                Emilia Petersen
             </h1>
             <span class="text-2xl font-medium text-white">© {new Date().getFullYear()}</span>
         </div>
