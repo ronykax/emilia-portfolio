@@ -135,12 +135,6 @@ const guilds: {
             subject: "2000+ Members",
             description: "https://discord.gg/nxtWpbvfFJ",
             image: "https://cdn.discordapp.com/attachments/1196003341575135242/1198333066733690880/image.png?ex=65be85a3&is=65ac10a3&hm=0b70df6b909dcfed025c25f02475587e4196da09bf8617250797a1409fef68ba&"
-        },
-        {
-            title: "Trans Gamers",
-            subject: "50+ Members",
-            description: "https://discord.gg/SVe9pNwtD9",
-            image: "https://cdn.discordapp.com/icons/1121150410779021342/ce679d7e1a45e719b7e553e460df96d6.webp?size=1024&format=webp&width=0&height=256"
         }
     ],
     row2: [
@@ -157,16 +151,16 @@ const guilds: {
             image: "https://cdn.discordapp.com/icons/869610180009156659/599d08bdc2cf8dceee4cebb0414f4e13.webp?size=1024&format=webp&width=0&height=256"
         },
         {
-            title: "Would You",
-            subject: "400+ Members",
-            description: "https://discord.gg/Jmd7GkKRmW",
-            image: "https://cdn.discordapp.com/icons/1009562516105461780/a2b2fb036d7a044bea40493685f84462.webp?size=1024&format=webp&width=0&height=256"
-        },
-        {
             title: "Emilia's Den",
             subject: "20+ Members",
             description: "https://discord.gg/pJc2djYZHX",
             image: "https://cdn.discordapp.com/icons/1197169837617709207/cf4a67ceb77ddaa0ba09d213dd0f3088.webp?size=1024&format=webp&width=0&height=256"
+        },
+        {
+            title: "Trans Gamers",
+            subject: "50+ Members",
+            description: "https://discord.gg/SVe9pNwtD9",
+            image: "https://cdn.discordapp.com/icons/1121150410779021342/ce679d7e1a45e719b7e553e460df96d6.webp?size=1024&format=webp&width=0&height=256"
         }
     ]
 }

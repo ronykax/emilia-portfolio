@@ -19,7 +19,7 @@
             <ul class="flex flex-col gap-4">
                 {#each options as item}                    
                     <li>
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-4 hover:opacity-60">
                             <svelte:component this={item.icon} />
                             <a href="{item.subject}" on:click={() => opened = !opened}>
                                 <h1 class="text-xl font-semibold text-black font-bricolage">{item.title}</h1>
@@ -53,7 +53,7 @@
                 <div class="hidden lg:block">
                     <ul class="flex gap-8">
                         <li>
-                            <div class="flex items-center gap-2">
+                            <div class="flex items-center gap-2 hover:opacity-60">
                                 <FolderBlack />
                                 <a href="#portfolio">
                                     <h1 class="text-xl font-semibold">Portfolio</h1>
@@ -61,7 +61,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="flex items-center gap-2">
+                            <div class="flex items-center gap-2 hover:opacity-60">
                                 <BrushBlack />
                                 <a href="#services">
                                     <h1 class="text-xl font-semibold">Services</h1>
@@ -69,7 +69,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="flex items-center gap-2">
+                            <div class="flex items-center gap-2 hover:opacity-60">
                                 <ChatBlack />
                                 <a href="#reviews">
                                     <h1 class="text-xl font-semibold">Testimonials</h1>
